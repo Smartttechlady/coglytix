@@ -1,0 +1,67 @@
+/* 404 Page Styling */
+.not-found-page {
+    background-color: #111827;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  /* Background Gradient Effect */
+  .not-found-page::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(4, 31, 88, 0.4) 10%, rgba(174, 199, 67, 0.15) 60%);
+    filter: blur(100px);
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  /* Error Code */
+  .error-code {
+    font-size: 120px;
+    font-weight: 800;
+    color: #aec743;
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Error Message */
+  .error-message {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Error Description */
+  .error-description {
+    font-size: 16px;
+    margin: 10px 0 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Back Home Button */
+  .back-home-btn {
+    background: linear-gradient(45deg, #AEC743, #041F58);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .back-home-btn:hover {
+    background-color: #aec743;
+    color: #041F58;
+  }
+  
